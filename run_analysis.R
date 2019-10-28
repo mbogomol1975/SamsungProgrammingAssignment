@@ -15,10 +15,10 @@ dataset<-rbind(xtest, xtrain)
 
 ## Merge activity codes data sets into one
 datalabels<-rbind(ytest,ytrain)
-names(datalabels)<-"activitycode"
 
 ## Merge subjecs data sets into one
 datasubjects<-rbind(subjecttest,subjecttrain)
+names(datasubjects)<-"subject"
 
 ## Add labels to the data frame
 names(dataset)<-features[[2]]
